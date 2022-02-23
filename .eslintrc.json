@@ -23,10 +23,25 @@
         "sort-imports": "error",
         "sort-vars": "warn",
         "no-plusplus": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "import/no-import-module-exports": [
+            "error",
+            {
+                "exceptions": [
+                    "**/*/*.ts"
+                ]
+            }
+        ],
         "import/order": [
             "error",
             {
-                "newlines-between": "never",
                 "groups": [
                     [
                         "builtin",

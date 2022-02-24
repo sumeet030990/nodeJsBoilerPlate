@@ -1,7 +1,6 @@
 import { Application } from 'express';
-
-const apiRoutes = require('../routes/api');
-const webRoutes = require('../routes/web');
+import apiRoutes from '../routes/api';
+import webRoutes from '../routes/web';
 
 const routes = (app: Application) => {
   app.use('/api', apiRoutes);

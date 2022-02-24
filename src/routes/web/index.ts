@@ -1,13 +1,9 @@
-import { Request, Response } from 'express';
+import { Request, Response, Router } from 'express';
 
-const router = require('express').Router();
-
-router.use('/home', (req: Request, res: Response) => {
-  res.send('home Initial page');
-});
+const router = Router();
 
 router.use('', (req: Request, res: Response) => {
-  res.send('Initial page');
+  res.send('Website Initial page');
 });
 
-module.exports = router;
+export default router;

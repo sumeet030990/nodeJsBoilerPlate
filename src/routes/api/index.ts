@@ -1,6 +1,6 @@
-import { Request, Response } from 'express';
+import { Request, Response, Router } from 'express';
 
-const router = require('express').Router();
+const router = Router();
 
 // router.use('/auth', require('./auth'));
 // router.use('/user', require('./user'));
@@ -9,4 +9,4 @@ router.use('', (req: Request, res: Response) => {
   res.send('API  Initial page');
 });
 
-module.exports = router;
+export default router;
